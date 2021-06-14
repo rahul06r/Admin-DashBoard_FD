@@ -20,36 +20,36 @@ class _DashboardState extends State<Dashboard> {
   void initState() {
     // for first card
 
-    // var timer1 = Timer.periodic(Duration(seconds: 10), (_) {
-    //   setState(() {
-    //     firstnum += 10;
-    //   });
-    // });
+    var timer1 = Timer.periodic(Duration(seconds: 10), (_) {
+      setState(() {
+        firstnum += 10;
+      });
+    });
 
     // // for second card
 
-    // var timer2 = Timer.periodic(Duration(seconds: 10), (_) {
-    //   setState(() {
-    //     // minutes: 1
-    //     secodnum += 5;
-    //   });
-    // });
+    var timer2 = Timer.periodic(Duration(seconds: 10), (_) {
+      setState(() {
+        // minutes: 1
+        secodnum += 5;
+      });
+    });
 
     // // for third card
 
-    // var timer3 = Timer.periodic(Duration(seconds: 20), (_) {
-    //   setState(() {
-    //     thirdnum += 100;
-    //   });
-    // });
+    var timer3 = Timer.periodic(Duration(seconds: 20), (_) {
+      setState(() {
+        thirdnum += 100;
+      });
+    });
 
     // // for fourth card
 
-    // var timer4 = Timer.periodic(Duration(seconds: 10), (_) {
-    //   setState(() {
-    //     fourthnum -= 2;
-    //   });
-    // });
+    var timer4 = Timer.periodic(Duration(seconds: 10), (_) {
+      setState(() {
+        fourthnum -= 2;
+      });
+    });
 
     super.initState();
   }
@@ -392,36 +392,7 @@ class _DashboardState extends State<Dashboard> {
                               ),
                             ),
                             Spacer(),
-                            // Padding(
-                            //   padding:
-                            //       const EdgeInsets.only(right: 10, bottom: 10),
-                            //   child: Align(
-                            //     alignment: Alignment.bottomRight,
-                            //     child: Material(
-                            //       elevation: 5,
-                            //       borderRadius: BorderRadius.circular(20),
-                            //       color: Colors.transparent,
-                            //       child: InkWell(
-                            //         onTap: () {
-                            //           IndexedStack(index: 3);
-                            //         },
-                            //         child: Container(
-                            //           alignment: Alignment.center,
-                            //           width: 100,
-                            //           height: 40,
-                            //           decoration: BoxDecoration(
-                            //               color: Colors.blue,
-                            //               borderRadius:
-                            //                   BorderRadius.circular(20)),
-                            //           child: Text(
-                            //             "See All",
-                            //             style: TextStyle(color: Colors.white),
-                            //           ),
-                            //         ),
-                            //       ),
-                            //     ),
-                            //   ),
-                            // ),
+                           
                           ],
                         ),
                       ),
